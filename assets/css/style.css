@@ -1,17 +1,13 @@
 
 
 .header {
-    background-color: #F1F1F1;
+    background-color: #ffffff;
     
     text-align: center;
     padding: 25px;
 }
 
-img {
-    width: 100%;
-    height: 75%;
 
-}
 
 
 p {
@@ -26,12 +22,12 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(2, 0, 0);
 
 }
 
 a:hover {
-    color: #F1F1F1;
+    color: #d7f803;
 }
 
 a.anchor{
@@ -44,16 +40,13 @@ a.anchor{
 
 #logo-container img {
     text-align: center;
-    max-width: 50%;
-    height: 100%;
-    position: absolute;
+    display:inline-block;
     bottom: 0;
-    top: 17%;
-    left: 0;
-    position: fixed;
+    width: 50%;
+
 }
 
-  #menu {
+ #menu {
     font-size: large;
     font-family: sans-serif;
     box-sizing: content-box;
@@ -65,7 +58,8 @@ a.anchor{
     list-style-type: none;
     margin: 0%;
     padding: 0%;
-    background-color: #6fadd4;
+    background-color: #3e8de3;
+    color: #ffffff;
 
 }
 
@@ -73,8 +67,10 @@ a.anchor{
     display: inline-block;
     padding: 15px;
     margin-left: 25px;
+    color: #ffffff;
 
 }
+
 
 
 .content {
@@ -106,22 +102,43 @@ a.anchor{
     background-color: #7bc7f7;
     color: #120101;
     
+    
 }
 
 .projects img {
-    width: 65%;
-    height: 40%;
+    width: 25%;
+    height: 20%;
+    display: inline-block;
+    
 }
+
+.thumbnail { 
+    top:-50px; 
+    left:-35px; 
+    display:block; 
+    z-index:999; 
+    cursor: pointer; 
+    
+    } 
+
+.thumbnail:hover { 
+    transform: scale(1.15);
+}
+
 
 .projects ul {
     display: inline-block;
     margin-top: 15px;
+    
 }
 
 .projects li {
     display: inline;
     list-style-type: none;
     padding-right: 50px;
+    padding-top: 25px;
+    cursor: pointer;
+   
 }
 
 .contact {
