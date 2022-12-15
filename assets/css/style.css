@@ -6,32 +6,30 @@ html {
         font-size: 2rem;
     }
     
-    .header {
+    header {
         background-color: #ffffff;
-        
+        width: 100%;
         text-align: center;
         padding: 25px;
     }
     
-    
-    
+
     
     p {
         padding-bottom: 15px;
+        background-color: #3e8de3;
+        box-sizing: content-box;
+        box-shadow: #3e8de3;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         
     }
     
     body {
         font-family: sans-serif;
-        background-color: whitesmoke;
         
     }
     
-    a {
-        text-decoration: none;
-        color: rgb(2, 0, 0);
-    
-    }
+   
     
     a:hover {
         color: #d7f803;
@@ -47,10 +45,10 @@ html {
     
     #logo-container img {
         text-align: center;
-        display:inline-block;
+        display: inline-flex;
         bottom: 0;
-        width: 50%;
-    
+        width: 45%;
+        
     }
     
      #menu {
@@ -65,8 +63,9 @@ html {
         list-style-type: none;
         margin: 0%;
         padding: 0%;
-        background-color: #3e8de3;
+        background-color: #ffffff;
         color: #ffffff;
+
     
     }
     
@@ -74,11 +73,19 @@ html {
         display: inline-block;
         padding: 15px;
         margin-left: 25px;
-        color: #ffffff;
+        color: #3e8de3;
     
     }
     
+    #menu a {
+        color: #3e8de3;
+        text-decoration: none;
+        
+    }
     
+    #menu a:hover {
+       color: #d7f803
+    }
     
     .content {
         width: 65%;
@@ -86,31 +93,44 @@ html {
         margin-left: 25px;
         font-family: sans-serif;
         
+        
     }
     
     .about-me {
-        margin: 0;
-        padding: 15px;
-        border: 1px black;
-        width: 120%;
-        height: 120%;
-        font-family: sans-serif;
-        background-color: whitesmoke;
+        
+        
+        font-family: monospace;
+        box-sizing: content-box;
+        width: 900px;
+        border: 15px solid rgb(255, 140, 0);
+        padding: 50px 50px;
+        margin: 25px;
+        
+        
         
         
     }
     
     .about-me h2 {
-        text-indent: 40.2%;
+        text-indent: 0;
         margin-bottom: 5px;
-        text-decoration: underline;
+        
+        color: #141413;
+        
     }
     
     .about-me img {
         width: 35%;
         height: 30%;
-        float: left;
-        padding-right: 15px;
+        float: right;
+        padding-right: 25px;
+        margin: auto;
+        position: relative;
+        bottom: 65px;
+        
+                
+        
+        
         
     }
     
@@ -118,15 +138,24 @@ html {
         float: right;
         text-align: center;
         padding: 25px;
+        font-size: small;
+        background-color: #3e8de3;
+        box-sizing: content-box;
+        position: relative;
+        left: 100px;
+
         
     }
     
+    .about-me span {
+        color: rgb(255, 128, 0);
+    }
     
     .projects {
         margin: 50px;
         padding: 50px;
         width: 120%;
-        height: 120%;
+        height: 100%;
         font-family: sans-serif;
         background-color: #3e8de3;
         color: #120101;
@@ -136,6 +165,10 @@ html {
     
     .projects h2 {
         text-decoration: underline;
+        font-family: serif;
+        font-size: x-large;
+        font-weight: 400px;
+
     }
     
     .projects img {
@@ -146,10 +179,10 @@ html {
     }
     
     .thumbnail { 
-        top:-50px; 
-        left:-35px; 
-        display:block; 
-        z-index:999; 
+        top: -50px; 
+        left: -35px; 
+        display: block; 
+        z-index: 999; 
         cursor: pointer; 
         
         } 
@@ -177,41 +210,63 @@ html {
     .contact {
         margin: 50px;
         padding: 50px;
-        width: 120%;
-        height: 100%;
+        width: 75%;
+        height: 50%;
         font-family: sans-serif;
-        display: inline-block;
-        background-color: #3e8de3;
+        right: 100px;
+        
+        
+        
     }
     
     .contact h2 {
         text-decoration: underline;
     }
     
-    .contact ul {
     
-        display: inline-block;
-        margin-top: 0;
-        
-        
-    }
     
-    .contact li {
-        display: inline;
-        list-style-type: none;
-        padding-right: 100%;
+    .column {
+        float: right;
+        width: 50px;
+        padding: 50px;
+        position: relative;
+        left: 80px;
         
-    }
-    
-    .button {
         
-    }
-      .footer {
-        background-color: #F1F1F1;
-        text-align: center;
-        padding: 10px;
+        
+      }
+      
+      
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
       }
     
+    
+      .footer {
+        background-color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        left: 200px;
+      }
+    
+
+     .button {
+        position: relative;
+        left: 900px;
+        box-sizing: border-box;
+        box-shadow: #3e8de3;
+        color: #3e8de3;
+        background-color: #3e8de3;
+
+     }
+
+     .button a:hover {
+        color: #d7f803;
+     }
+
       .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -224,3 +279,15 @@ html {
          
     
         }
+
+        @media screen and (max-width: 500px) {
+            .about-me img {
+                width: 100%;
+            }
+          }
+    
+          @media screen and (max-width: 500px) {
+            .column {
+              width: 100%;
+            }
+          }
