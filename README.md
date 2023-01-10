@@ -4,3 +4,5 @@ This is the repo for my class portfolio project and I have called it Brett Russe
 This application allows someone to easily visit and navigate through the application to read a little about me, see projects I have worked on and it also gives them a way to contact me. Here, give it a try!  Click this link to view my portfolio! https://brbates86.github.io/BRB-Portfolio-Project-/
 
 As I created my very first portfolio I learned that there are many different ways to complete this project! I really enjoyed the task of creating and running the application. If it didn't work I figured out why and fixed it!
+
+http://127.0.0.1:5500/index.html
